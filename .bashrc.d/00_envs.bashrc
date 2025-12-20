@@ -1,9 +1,13 @@
 ## env variables
 
 # bash history
-HISTTIMEFORMAT="%F %T "
-HISTCONTROL=ignoredups
+export HISTTIMEFORMAT="%F %T "
+export HISTCONTROL=ignoredups
 shopt -s histappend
+
+#editor and visual
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # colors
 blk='\[\033[01;30m\]'   # Black
