@@ -28,3 +28,9 @@ links) to the home directory.
 
 Once the configuration is varified and working, we can push the changes to github, and pull it 
 to another computer and use stow to sync it to the other box.
+
+
+# stow
+
+when running `stow .` it default action is to sync the files in . to the directory that ins one level above cwd. e.g. if we are in ~/.dotfiles, then it will sync the files in ~/.dotfiles to ~
+
