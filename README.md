@@ -8,10 +8,16 @@ personal linux shell scripts. The structure of this repo mirrors the structure o
   cd ~
   git clone <repo.git> .dotfiles
   cd .dotfiles
-  stow .
+  stow --adopt .  
 ```
-This clones the repo into the home directory, and use gnu `stow` to create symbolic links of 
-ALL the files to one directory above, i.e. ~.
+This clones the repo into the home directory, and use gnu `stow` to update the repo with the current 
+state of the home directory. This will pull in existing settings into the repo, and there will be no 
+visible change to the current user setting. 
+
+Next, explore the local changes using git capable coding tools, reverting to the more functional content 
+in the repo.
+
+
 
 **create a new dotfile**
 When we want to add a new configuration that contains a dotfile and a bunch of custom
