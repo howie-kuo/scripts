@@ -1,0 +1,11 @@
+#!/bin/bash
+# Custom less filter
+
+case "$1" in
+    *.md)
+        glow "$1"
+        ;;
+    *)
+        /usr/bin/lesspipe "$1"
+        ;;
+esac

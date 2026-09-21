@@ -15,3 +15,5 @@ for file in ~/.bashrc.d/*.bashrc; do
 done
 
 eval "$(starship init bash)"
+
+

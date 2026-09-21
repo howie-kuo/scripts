@@ -3,7 +3,7 @@ format = """
 [ ](bg:#272f47)\
 [ ](bg:#4b4f51)\
 [ ](bg:#788099)\
-[  ](bg:#a3aed2 fg:#2a6b34)\
+[ X ](bg:#a3aed2 fg:#2a6b34)\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -14,7 +14,12 @@ $rust\
 [](fg:#212736 bg:#1d2230)\
 $time\
 [ ](fg:#1d2230)\
-\n$character"""
+\n$python $character"""
+
+[python]
+symbol = "🐍 "
+format = '[(\($virtualenv\))]($style) '
+
 
 
 [directory]
