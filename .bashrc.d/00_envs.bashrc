@@ -13,10 +13,6 @@ export VISUAL='nvim'
 export LESSOPEN="| $(brew list source-highlight | grep src-hilite-lesspipe.sh) %s"
 export LESS=" -R "
 
-if [ -d "$HOME/.local/bin" ]; then
-    export PATH="$HOME/.local/bin:$PATH"
-fi
-
 # colors
 blk='\[\033[01;30m\]'   # Black
 red='\[\033[01;31m\]'   # Red
